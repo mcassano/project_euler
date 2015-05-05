@@ -1,0 +1,17 @@
+def isPalindrome(n):
+    numLen = len(str(n))
+    for idx in range(1,numLen/2):
+        if (n[idx] != n[numLen-idx]):
+            return False
+    return True
+
+print isPalindrome(1001)
+print isPalindrome(101)
+print isPalindrome(11)
+print isPalindrome(1234321)
+print isPalindrome(1)
+print isPalindrome(2131231)
+
+#for idx in reversed(range(100,999)):
+#    for jdx in reversed(range(100,999)):
+#        if 
